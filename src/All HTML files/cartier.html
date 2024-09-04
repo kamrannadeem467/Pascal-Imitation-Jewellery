@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartier: A Tradition of Excellence and Style</title>
+    <link rel="stylesheet" href="../all-css-fils/home.css">
+    <link rel="stylesheet" href="../all-css-fils/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "poppins", sans-serif;
+        }
+
+        .hidden {
+            display: none;
+        }
+        @media screen and (max-width: 767px) {
+            .absolute {
+                position: absolute;
+                z-index: 1;
+                left: -100vw;
+                height: 100vh;
+                transition: .3s ease-in-out;
+                background-color: #fff;
+            }
+
+            .block {
+                position: absolute;
+                left: 0vw;
+                height: 100vh;
+                background-color: #fff;
+            }
+        }
+        @media screen and (max-width: 993px) {
+            .nav-bar {
+                position: fixed;
+                width: 50%;
+                height: 100vh;
+                background-color: white;
+                transform: translateX(-50vw);
+                transition: .3s ease-in-out;
+            }
+
+            .side {
+                transform: translateX(-0vw);
+                height: 100vh;
+                overflow: auto;
+                background-color: #fff;
+            }
+
+            .drop-menu {
+                width: 107%;
+                position: relative;
+                left: -30px;
+            }
+            .nav-bar li:hover .drop-menu {
+                height: auto;
+            }
+            
+            .drop-list {
+                width: 100%;
+            }
+            .drop-list li{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 580px) {
+                .nav-bar {
+                    width: 100%;
+                    transform: translateX(-100vw);
+                }
+
+                .side {
+                    transform: translateX(-0vw);
+                }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container d-flex justify-content-center align-items-center"
+                    style="background-color: #f5f5f5;;">
+                    <div class="row">
+                        <div class="col">Sale Up To 25% OFF</div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="container-xxl">
+                        <div class="row py-1">
+                            <div class="col">
+                                <div class="logo">
+                                    <img style="height: 120%;"
+                                        src="../../WhatsApp_Image_2024-07-31_at_3.01.33_PM-removebg-preview.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6 d-none d-sm-flex justify-content-center">
+                                <div
+                                    class="search-bar d-sm-flex w-100 d-none justify-content-center align-items-center">
+                                    <input class="w-100 ps-2" type="search" id="search" placeholder="Search">
+                                    <i class='bx bx-search d-flex justify-content-center align-items-center'></i>
+                                </div>
+                            </div>
+                            <div class="col text-end d-flex justify-content-end">
+                                <div class="cart-items d-none d-lg-flex justify-content-center align-items-center">
+                                    <a href="../All HTML files/signIn.html"
+                                        class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                        style="width: 80px;">Sign In</a>
+                                    <a href="../All HTML files/signUp.html"
+                                        class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                        style="width: 80px;">Sign Up</a>
+                                    <i class='bx bx-cart-alt fs-2'></i><span
+                                        class="ms-2 fs-6 fw-bold text-white d-flex justify-content-center align-items-center">4</span>
+                                </div>
+                                <div class="menubar d-flex justify-content-center align-items-center d-lg-none pe-1 z-4"
+                                    style="cursor: pointer;" id="menu">
+                                    <i class="fa-solid fa-bars fs-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="nav-bar d-flex justify-content-center align-items-start align-items-lg-center z-3 "
+                    id="navbar">
+                    <p class="position-absolute d-block fs-4 d-lg-none mt-2" onclick="bye()"
+                        style="left: 90%; cursor: pointer;"><b>X</b></p>
+                    <div class="nav-items d-block justify-content-center align-items-center">
+                        <div class="nav-links mt-5 mt-lg-2 d-flex flex-column align-items-center position-relative">
+                            <ul class="flex-column flex-lg-row align-items-start row-gap-5 row-gap-lg-0 ps-0">
+                                <li onclick="bye()"><a class="link" href="../../index.html">Home</a></li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/about.html">About Us</a>
+                                </li>
+                                <li><a class="link" href="#">Catagories</a><i class="bx bx-chevron-down bx-flip-"></i>
+                                    <div class="drop-menu w-100">
+                                        <ul class="drop-list">
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/catagory.html">Rings</a></li>
+                                                <li><a class="linking" href="../All HTML files/catagory.html">Gold
+                                                        Rings</a></li>
+                                                <li><a class="linking" href="../All HTML files/catagory.html">Diamond
+                                                        Rings</a></li>
+                                                <li><a class="linking" href="../All HTML files/catagory.html">Artificial
+                                                        Rings</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/b-catagory.html">Bracelets</a></li>
+                                                <li><a class="linking" href="../All HTML files/b-catagory.html">Gold
+                                                        Bracelets</a></li>
+                                                <li><a class="linking" href="../All HTML files/b-catagory.html">Diamond
+                                                        Bracelets</a></li>
+                                                <li><a class="linking"
+                                                        href="../All HTML files/b-catagory.html">Artificial
+                                                        Bracelets</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/N-catagory.html">Neckles</a></li>
+                                                <li><a class="linking" href="../All HTML files/N-catagory.html">Gold
+                                                        Neckles</a></li>
+                                                <li><a class="linking" href="../All HTML files/N-catagory.html">Diamond
+                                                        Neckles</a></li>
+                                                <li><a class="linking"
+                                                        href="../All HTML files/N-catagory.html">Artificial Neckles</a>
+                                                </li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/E-catagory.html">Earrings</a></li>
+                                                <li><a class="linking" href="../All HTML files/E-catagory.html">Gold
+                                                        Earrings</a></li>
+                                                <li><a class="linking" href="../All HTML files/E-catagory.html">Diamond
+                                                        Earrings</a></li>
+                                                <li><a class="linking"
+                                                        href="../All HTML files/E-catagory.html">Artificial Earrings</a>
+                                                </li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="fw-bold link"
+                                                        href="../All HTML files/A-catagory.html">Anklets</a></li>
+                                                <li><a class="linking" href="../All HTML files/A-catagory.html">Gold
+                                                        Anklets</a></li>
+                                                <li><a class="linking" href="../All HTML files/A-catagory.html">Diamond
+                                                        Anklets</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li class=""></li>
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/F-catagory.html">Fashion Jewellery</a>
+                                                </li>
+                                                <li><a class="linking" href="../All HTML files/F-catagory.html">Gold
+                                                        Jewellery</a></li>
+                                                <li><a class="linking" href="../All HTML files/F-catagory.html">Diamond
+                                                        Jewellery</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/BJ-catagory.html">Bridal Jewellery</a>
+                                                </li>
+                                                <li><a class="linking" href="../All HTML files/BJ-catagory.html">Gold
+                                                        Jewellery</a></li>
+                                                <li><a class="linking" href="../All HTML files/BJ-catagory.html">Diamond
+                                                        Jewellery</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="link" href="#">Brands</a><i class="bx bx-chevron-down bx-flip-"></i>
+                                    <div class="drop-menu w-100">
+                                        <ul class="drop-list">
+                                            <div class="box">
+                                                <li onclick="bye()"><a class="link fw-bold"
+                                                        href="../All HTML files/goldsmiths.html">GOLDSMITHS</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Neckles</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Earrings</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li onclick="bye()"><a class="link fw-bold"
+                                                        href="../All HTML files/Tiffany.html">Tiffany & co.</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Neckles</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Earrings</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/harrywinston.html">Harry Winston</a>
+                                                </li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Anklets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Bridal Jewellery</a>
+                                                </li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold" href="#">Cartier</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Necklaces</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Fashion Jewellery</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/compare.html">Compare</a></li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/gallary.html">Gallery</a>
+                                </li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-items bg-light pb-5 pt-2 d-flex d-lg-none">
+                            <a href="../All HTML files/signIn.html"
+                                class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                style="width: 80px;">Sign In</a>
+                            <a href="../All HTML files/signUp.html"
+                                class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                style="width: 80px;">Sign Up</a>
+                            <i class='bx bx-cart-alt fs-2'></i>
+                            <span
+                                class="ms-2 fs-6 fw-bold text-white d-flex justify-content-center align-items-center">4</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="container-fluid">
+        <div class="imagee d-none d-sm-block"
+            style="background-image: url(../banner-Images/main-banner-1-1.jpg); object-fit: cover;height: 150px; background-position: center;">
+        </div>
+    </div>
+    <div class="container-fluid mt-2">
+        <div class="container-xxl">
+            <!--mobile category filter -->
+            <div class="row">
+                <div class="col-6 z-2">
+                    <div class="btn btn-dark rounded-0 z-2 position-absolute d-md-none d-block fw-semibold"
+                        onclick="sidebar()"><i class="fa-solid fa-filter pe-2"></i>FILTER</div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+            <div class="row">
+                <!-- category filter -->
+                <div class="col-md-4 col-lg-3 absolute" id="sidebar"
+                    style="border-right: 1px solid rgb(209, 209, 209);">
+                    <div class="accordion bg-success my-5 rounded-3" id="accordionExample ">
+                        <div class="accordion-item ">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-5 fw-semibold text-white"
+                                    style="background-color: #bdbdbd;" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Filter
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body" style="background-color: #f5f5f5">
+                                    <ul class="text-secondary" style="line-height: 30px;">
+                                        <li><a href="#" id="All">All</a></li>
+                                        <hr>
+                                        <li><a href="#" id="Rings">Rings</a></li>
+                                        <hr>
+                                        <li><a href="#" id="Bracelets">Bracelets</a></li>
+                                        <hr>
+                                        <li><a href="#" id="Neckles">Neckles</a></li>
+                                        <hr>
+                                        <li><a href="#" id="Earrings">Fashion Jewellery</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- brand products -->
+                <div class="col-md-8 col-lg-9 col-12 d-flex flex-column justify-content-center">
+                    <nav aria-label="breadcrumb" class="d-none d-md-block">
+                        <ol class="breadcrumb mt-3">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Brands</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Cartier</li>
+                        </ol>
+                    </nav>
+                    <!-- rings  -->
+                    <div class="wrap" id="rings-sec">
+                        <!-- gold rings -->
+                        <div class="row overflow-auto">
+                            <h3 class="fs-2 mt-md-3 mt-5"><b>Gold Rings</b></h3>
+                            <div class="card-box mb-4 d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-rings/gold-rings (8).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/gold-ring-17.html" style="width: 90%;">
+                                                <div class="card2 rounded-0  text-center text-white py-2"
+                                                    style="background-color: #9e9a9a;">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <P>Cartier</P>
+                                    <p class="text-center"><a href="#">18ct White Gold 0.42cttw Mixed Cut Band Ring</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-rings/gold-rings (9).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/gold-ring-18.html" style="width: 90%;">
+                                                <div class="card2 rounded-0  text-center text-white py-2"
+                                                    style="background-color: #9e9a9a;">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <P>Cartier</P>
+                                    <p class="text-center"><a href="#">18ct Yellow Gold Wedding Ring</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2.5L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-rings/gold-rings (7).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/gold-ring-19.html" style="width: 90%;">
+                                                <div class="card2 rounded-0  text-center text-white py-2"
+                                                    style="background-color: #9e9a9a;">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <P>Cartier</P>
+                                    <p class="text-center"><a href="#">18ct Yellow Gold Gents Ring</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 1.5L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-rings/gold-rings (12).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/gold-ring-20.html" style="width: 90%;">
+                                                <div class="card2 rounded-0  text-center text-white py-2"
+                                                    style="background-color: #9e9a9a;">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <P>Cartier</P>
+                                    <p class="text-center"><a href="#">18ct Yellow Gold Three Row Ring</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 1.75L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-rings/gold-rings (11).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/gold-ring-21.html" style="width: 90%;">
+                                                <div class="card2 rounded-0  text-center text-white py-2"
+                                                    style="background-color: #9e9a9a;">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <P>Cartier</P>
+                                    <p class="text-center"><a href="#">18ct White Gold Souls Flex'it Ruby Ring - Small</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 1.50L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-rings/gold-rings (10).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/gold-ring-22.html" style="width: 90%;">
+                                                <div class="card2 rounded-0  text-center text-white py-2"
+                                                    style="background-color: #9e9a9a;">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <P>Cartier</P>
+                                    <p class="text-center"><a href="#">18ct Yellow Gold Vendome Flex'it 0.10ct Diamond Ring - XL</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- diamond rings -->
+                        <div class="row my-4 overflow-auto">
+                            <h3 class="fs-2 mt-5"><b>Diamond Rings</b></h3>
+                            <div class="card-box my-4  d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-rings/diamond-rings (13).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/diamond-ring-17.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Petit Joli Ring in 18ct Rose Gold with Onyx and Diamonds</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2.25L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-rings/diamond-rings (18).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/diamond-ring-18.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Platinum 1.00ct Diamond Shape Wedding Ring</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 1.5L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-rings/diamond-rings (14).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/diamond-ring-19.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Platinum 0.05ct Diamond 5mm Paris Court Wedding Ring</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 50K - PKR 1.75L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-rings/diamond-rings (15).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/diamond-ring-20.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Platinum 0.25ct Diamond Shape Wedding Ring</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-rings/diamond-rings (16).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/diamond-ring-21.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">White gold or heavy diamond Ring</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 75K - PKR 1.25L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-rings/diamond-rings (17).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/diamond-ring-22.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">18ct White Gold 0.75ct Dress Eternity Ring</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 50K - PKR 1L</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- artifiial rings -->
+                        <div class="row my-4 overflow-auto">
+                            <h3 class="fs-2 mt-5"><b>Artificial Rings</b></h3>
+                            <div class="card-box my-4  d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-rings/gold-rings (10).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/gold-ring-22.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Craftsmanship Meets Innovation: Discover Our Unique Ring Designs</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-rings/diamond-rings (13).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/diamond-ring-17.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Discover Innovative Ring Designs that Blend Tradition with Modernity</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-rings/gold-rings (7).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/gold-ring-19.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">xplore the Future of Jewelry with Our Technologically-Enhanced Rings</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-rings/diamond-rings (18).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="../product-detail-files/diamond-ring-18.html" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Elegant and Innovative Rings for the Contemporary Trendsetter</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bracelates -->
+                    <div class="wrap" id="Bracelets-sec">
+                        <!-- gold bracelates -->
+                        <div class="row overflow-auto" id="Gold-Bracelates">
+                            <h3 class="fs-2 mt-5"><b>Gold Bracelets</b></h3>
+                            <div class="card-box my-4 d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-bracelates/gold-bracelates (13).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Horsebit 18ct Yellow Gold Bracelet - Size 18</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-bracelates/gold-bracelates (14).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Horsebit 18ct Yellow Gold Link Bracelet - Size 17</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-bracelates/gold-bracelates (15).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">18ct Yellow Gold Hollow Curb Chain Bracelet</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-bracelates/gold-bracelates (16).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">9ct Yellow Gold Heart T-Bar Bracelet</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-bracelates/gold-bracelates (17).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Horsebit 18ct Yellow Gold Medium Bracelet - Size 18</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-bracelates/gold-bracelates (18).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">9ct Yellow Gold Figaro Bracelet</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- diamond bracelates -->
+                        <div class="row overflow-auto" id="Diamond-Bracelates">
+                            <h3 class="fs-2 mt-5"><b>Diamond Bracelets</b></h3>
+                            <div class="card-box my-4 d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-bracelates/diamon-bracelates (13).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">18ct White Gold Vendome Flex'it Diamond Bracelet</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-bracelates/diamon-bracelates (14).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">9ct White Gold 0.15ct Diamond Scatter Bracelet</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-bracelates/diamon-bracelates (15).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier/p>
+                                    <p class="text-center"><a href="#">Limited Edition Renee 18ct White Gold 1.50cttw Ribbon Bangle</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-bracelates/diamon-bracelates (13).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Love Pandent For Women stylishly <br>
+                                            Designed</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-bracelates/diamon-bracelates (16).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">18ct White Gold GG Running 0.20cttw Diamond Bracelet - Medium</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-bracelates/diamon-bracelates (17).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Vinea 18ct White Gold 3.00cttw Leaf Marquise Cut Bracelet</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- aritificial bracelates -->
+                        <div class="row overflow-auto" id="Artificial-Bracelates">
+                            <h3 class="fs-2 mt-5"><b>Artificial Bracelets</b></h3>
+                            <div class="card-box my-4 d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-bracelates/gold-bracelates (13).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Redefine Your Jewelry Collection with Modern, Technologically-Driven Bracelets</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-bracelates/diamon-bracelates (18).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Modern Luxury: Explore Our Range of High-Tech Bracelet Designs</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-bracelates/gold-bracelates (16).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Revolutionize Your Style with Our Advanced Bracelet Creations</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-bracelates/diamon-bracelates (17).jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Discover Innovative Bracelet Designs that Blend Tradition with Modernity</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Necklaces -->
+                    <div class="wrap" id="Neckles-sec">
+                        <!-- gold Necklaces -->
+                        <div class="row overflow-auto" id="Gold-Necklaces">
+                            <h3 class="fs-2 mt-5"><b>Gold Necklaces</b></h3>
+                            <div class="card-box my-4 d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-necklace/necklace-3.jpg"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">18ct Yellow Gold St Christopher Necklace</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-necklace/necklace-4.jpg"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">18ct Yellow Gold 45-50cm (18-20") Curb Chain 0.8mm Width</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-necklace/necklace-5.jpg"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">9ct Yellow Gold 16 Inch Diamond Cut Curb Chain 0.6mm Width</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-necklace/necklace-6.jpg"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">9ct Yellow Gold St Christopher Pendant Necklace</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- diamond Necklaces -->
+                        <div class="row overflow-auto" id="Diamond-Necklaces">
+                            <h3 class="fs-2 mt-5"><b>Diamond Necklaces</b></h3>
+                            <div class="card-box my-4 d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-necklace/diamond-necklace (1).png"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">9ct White Gold 0.20ct Diamond Pear Cluster Pendant</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-necklace/diamond-necklace (2).jpg"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">9ct White Gold 0.30ct Diamond Princess Cut Halo Necklace</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-necklace/diamond-necklace-7.jpg"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Petit Joli Necklace in 18ct Rose Gold <br> with Pearl of the Moon gem and Diamonds</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- aritificial Necklaces -->
+                        <div class="row overflow-auto" id="Artificial-Bracelates">
+                            <h3 class="fs-2 mt-5"><b>Artificial Necklaces</b></h3>
+                            <div class="card-box my-4 d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-necklace/necklace-6.jpg"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">9ct Yellow Gold Heart Pendant Necklace</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/diamond-necklace/diamond-necklace (2).jpg"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Love Pandent For Women stylishly <br>
+                                            Designed</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-necklace/necklace-4.jpg"
+                                            alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Love Pandent For Women stylishly <br>
+                                            Designed</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/gold-necklace/necklace-5.jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Love Pandent For Women stylishly <br>
+                                            Designed</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                    <div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fashion Jewellery -->
+                    <div class="wrap" id="Earrings-sec">
+                        <!-- gold jewellery -->
+                        <div class="row overflow-auto" id="gold-earrings">
+                            <h3 class="fs-2 mt-5"><b>Gold Jewellery</b></h3>
+                            <div class="card-box my-4 d-flex">
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/fashion jewellery/fashion-2.jpg" alt="">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Love Pandent For Women stylishly <br>
+                                            Designed</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/fashion jewellery/fashion-4.jpg">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Love Pandent For Women stylishly <br>
+                                            Designed</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/fashion jewellery/fashion.jpg">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Love Pandent For Women stylishly <br>
+                                            Designed</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/fashion jewellery/Untitled.jpg">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Love Pandent For Women stylishly <br>
+                                            Designed</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+                                <div class="boxes border-end d-flex flex-column justify-content-evenly align-items-center"
+                                    style="background-color: white;">
+                                    <div
+                                        class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                                        <img src="../Cartier/fashion jewellery/images.jpg">
+                                        <div class="add-cart">
+                                            <a href="#" style="width: 90%;">
+                                                <div class="card2 text-center text-white py-2">
+                                                    ADD TO CART
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <p>Cartier</p>
+                                    <p class="text-center"><a href="#">Love Pandent For Women stylishly <br>
+                                            Designed</a></p>
+                                    <span>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </span>
+                                    <p>PKR 1L - PKR 2L</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- diamond jewellery -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✌✌👉footer Section👈✌✌ -->
+    <hr>
+    <div class="container-fluid footer-color">
+        <div class="container-xxl py-2 px-0">
+            <div id="Container">
+                <!-- fetching data from home.js file  -->
+            </div>
+            <hr>
+            <div class="container-xxl">
+                <div class="row px-4">
+                    <div class="col-6 py-2">
+                        <p>&copy; 2024 Our Jewellery. All rights reserved.</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end column-gap-2">
+                        <i class="bx bxl-whatsapp fs-2"></i>
+                        <i class="bx bxl-instagram fs-2"></i>
+                        <i class="bx bxl-facebook fs-2"></i>
+                        <i class="bx bxl-twitter fs-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr"></div>
+    <script src="../All-script-files/header.js"></script>
+    <script src="../All-script-files/index.js"></script>
+    <script src="../All-script-files/brand.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

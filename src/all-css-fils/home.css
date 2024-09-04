@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body {height: auto;}
+body a {
+    text-decoration: none;
+    color: black;
+}
+.search-bar input {
+    border-radius: 7px 0px 0px 7px;
+    height: 37px;
+    border: 1px solid grey;
+}
+.search-bar i {
+    background-color: #cdc0c0;
+    height: 37px;
+    width: 37px;
+    color: white;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid black;
+    font-size: x-large;
+}
+.logo {height: 70px;
+    width: auto;}
+.cart-items {
+    position: relative;
+    font-weight: 600;
+}
+.cart-items span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: #888888;
+    transform: translate(-17px, -10px);
+}
+.nav-bar {width: 100vw;}
+.nav-bar .nav-items .nav-links ul {
+    display: flex;
+    align-items: center;
+}
+.nav-bar .nav-items .nav-links ul li {
+    list-style-type: none;
+    margin: 0px 30px;
+}
+.nav-bar .nav-items .nav-links ul li .link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.drop-menu {
+    height: 0px;
+    transform: 1s ease;
+    overflow: hidden;
+    position: absolute;
+    background-color: white;
+    top: 41px;
+    right: 0px;
+    transition: .3s ease;
+}
+.drop-list {
+    list-style: none;
+    padding: 0px 5px;
+    width: 100%;
+    transform: 1s ease;
+    flex-wrap: wrap;
+}
+.drop-list li {
+    margin: 10px;
+}
+.nav-bar li:hover .drop-menu {
+    height: 300px;
+}
+.box {
+    height: 100%;
+    width: 215px;
+    margin: 20px 5px;
+}
+.nav-bar .nav-items .nav-links ul li .linking {
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 30px;
+}
+.nav-bar .nav-items .nav-links ul li .link:hover {
+    text-decoration: underline;
+}
+.nav-bar .nav-items .nav-links ul li .linking:hover {
+    text-decoration: underline;
+}
+/* header end */
+.card2{
+    background-color: #9e9a9a;
+}
+.accordion-body{
+    background-color: #f5f5f5;
+}
+.ring-rapper {
+    width: 98vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+.popular-items-wrapper {
+    height: 100%;
+    display: flex;
+    overflow: auto;
+
+}
+.overflow-auto::-webkit-scrollbar,
+.scroll-bar::-webkit-scrollbar,
+.popular-items-wrapper::-webkit-scrollbar,
+.choose-items-wrapper::-webkit-scrollbar{
+    height: 6px;
+    cursor: pointer;
+}
+.overflow-auto:hover::-webkit-scrollbar-thumb,
+.scroll-bar:hover::-webkit-scrollbar-thumb,
+.popular-items-wrapper:hover::-webkit-scrollbar-thumb,
+.choose-items-wrapper:hover::-webkit-scrollbar-thumb{
+    height: 6px;
+    cursor: pointer;
+    background-color: #bdbcbc !important;
+}
+.overflow-auto::-webkit-scrollbar-thumb,
+.scroll-bar::-webkit-scrollbar-thumb,
+.choose-items-wrapper::-webkit-scrollbar-thumb,
+.popular-items-wrapper::-webkit-scrollbar-thumb{
+    /* background-color: #bdbcbc; */
+    background-color: #f3f3f3;
+    border-radius: 50px;
+     cursor: pointer;
+}
+.popular-items {
+    min-width: 200px;
+    height: 100%;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.popular-items a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+.banner-image img {
+    width: 100%;
+}
+.cards-box{
+    width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+}
+.special-cards-box{
+    width: 1440px;
+    display: flex;
+}
+.cards-box .boxes {
+    height: auto;
+}
+.boxes .img {
+    height: 320px;
+    overflow: hidden;
+    margin: 20px 0px;
+    width: 80%;
+}
+.boxes .img .add-cart{
+    top: 5px; width: 90%; position: relative;
+    transition: .3s ease;
+}
+.boxes .img:hover .add-cart{
+    top: -50px;
+}
+.boxes p {
+    font-weight: 500;
+}
+.popular-items span,
+.boxes span {
+    color: rgb(255, 230, 0);
+}
+.choose-items-wrapper{
+    height: 100%;
+    display: flex;
+    overflow: auto;
+}
+.choose-box{
+    margin: 0px 20px;
+    min-width: 300px;
+    text-align: center;
+}
+.ring-content h4{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.ring-content ul li{
+    list-style: '✔';
+    line-height: 30px;
+    padding: 0px 10px;
+}
+@media screen and (max-width: 633px) {
+.boxes .img {
+    width: 70%;
+    height: 300px;
+}
+}

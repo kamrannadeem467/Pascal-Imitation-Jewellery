@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product COmparision</title>
+    <link rel="icon" type="image/x-icon" href="../../WhatsApp_Image_2024-07-31_at_3.01.33_PM-removebg-preview.png">
+    <link rel="stylesheet" href="../all-css-fils/home.css">
+    <link rel="stylesheet" href="../all-css-fils/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .prodImg {
+            height: 310px;
+            width: auto;
+        }
+    </style>
+    <style>
+        body {
+            font-family: "poppins", sans-serif;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            .absolute {
+                position: absolute;
+                z-index: 1;
+                left: -100vw;
+                height: 100vh;
+                transition: .3s ease-in-out;
+                background-color: #fff;
+            }
+
+            .block {
+                position: absolute;
+                left: 0vw;
+                height: 100vh;
+                background-color: #fff;
+            }
+        }
+
+        @media screen and (max-width: 993px) {
+            .nav-bar {
+                position: fixed;
+                width: 50%;
+                height: 100vh;
+                background-color: white;
+                transform: translateX(-50vw);
+                transition: .3s ease-in-out;
+            }
+
+            .side {
+                transform: translateX(-0vw);
+                height: 100vh;
+                overflow: auto;
+                background-color: #fff;
+            }
+
+            .drop-menu {
+                width: 107%;
+                position: relative;
+                left: -30px;
+            }
+
+            .nav-bar li:hover .drop-menu {
+                height: auto;
+            }
+
+            .drop-list {
+                width: 100%;
+            }
+
+            .drop-list li {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 580px) {
+            .nav-bar {
+                width: 100%;
+                transform: translateX(-100vw);
+            }
+
+            .side {
+                transform: translateX(-0vw);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container d-flex justify-content-center align-items-center"
+                    style="background-color: #f5f5f5;;">
+                    <div class="row">
+                        <div class="col">Sale Up To 25% OFF</div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="container-xxl">
+                        <div class="row py-1">
+                            <div class="col">
+                                <div class="logo">
+                                    <img style="height: 120%;"
+                                        src="../../WhatsApp_Image_2024-07-31_at_3.01.33_PM-removebg-preview.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6 d-none d-sm-flex justify-content-center">
+                                <div
+                                    class="search-bar d-sm-flex w-100 d-none justify-content-center align-items-center">
+                                    <input class="w-100 ps-2" type="search" id="search" placeholder="Search">
+                                    <i class='bx bx-search d-flex justify-content-center align-items-center'></i>
+                                </div>
+                            </div>
+                            <div class="col text-end d-flex justify-content-end">
+                                <div class="cart-items d-none d-lg-flex justify-content-center align-items-center">
+                                    <a href="../All HTML files/signIn.html"
+                                        class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                        style="width: 80px;">Sign In</a>
+                                    <a href="../All HTML files/signUp.html"
+                                        class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                        style="width: 80px;">Sign Up</a>
+                                    <i class='bx bx-cart-alt fs-2'></i><span
+                                        class="ms-2 fs-6 fw-bold text-white d-flex justify-content-center align-items-center">4</span>
+                                </div>
+                                <div class="menubar d-flex justify-content-center align-items-center d-lg-none pe-1 z-4"
+                                    style="cursor: pointer;" id="menu">
+                                    <i class="fa-solid fa-bars fs-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="nav-bar d-flex justify-content-center align-items-start align-items-lg-center z-3 "
+                    id="navbar">
+                    <p class="position-absolute d-block fs-4 d-lg-none mt-2" onclick="bye()"
+                        style="left: 90%; cursor: pointer;"><b>X</b></p>
+                    <div class="nav-items d-block justify-content-center align-items-center">
+                        <div class="nav-links mt-5 mt-lg-2 d-flex flex-column align-items-center position-relative">
+                            <ul class="flex-column flex-lg-row align-items-start row-gap-5 row-gap-lg-0 ps-0">
+                                <li onclick="bye()"><a class="link" href="../../index.html">Home</a></li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/about.html">About Us</a>
+                                </li>
+                                <li><a class="link" href="#">Catagories</a><i class="bx bx-chevron-down bx-flip-"></i>
+                                    <div class="drop-menu w-100">
+                                        <ul class="drop-list">
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/catagory.html">Rings</a></li>
+                                                <li><a class="linking" href="../All HTML files/catagory.html">Gold
+                                                        Rings</a></li>
+                                                <li><a class="linking" href="../All HTML files/catagory.html">Diamond
+                                                        Rings</a></li>
+                                                <li><a class="linking" href="../All HTML files/catagory.html">Artificial
+                                                        Rings</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/b-catagory.html">Bracelets</a></li>
+                                                <li><a class="linking" href="../All HTML files/b-catagory.html">Gold
+                                                        Bracelets</a></li>
+                                                <li><a class="linking" href="../All HTML files/b-catagory.html">Diamond
+                                                        Bracelets</a></li>
+                                                <li><a class="linking"
+                                                        href="../All HTML files/b-catagory.html">Artificial
+                                                        Bracelets</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/N-catagory.html">Neckles</a></li>
+                                                <li><a class="linking" href="../All HTML files/N-catagory.html">Gold
+                                                        Neckles</a></li>
+                                                <li><a class="linking" href="../All HTML files/N-catagory.html">Diamond
+                                                        Neckles</a></li>
+                                                <li><a class="linking"
+                                                        href="../All HTML files/N-catagory.html">Artificial Neckles</a>
+                                                </li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/E-catagory.html">Earrings</a></li>
+                                                <li><a class="linking" href="../All HTML files/E-catagory.html">Gold
+                                                        Earrings</a></li>
+                                                <li><a class="linking" href="../All HTML files/E-catagory.html">Diamond
+                                                        Earrings</a></li>
+                                                <li><a class="linking"
+                                                        href="../All HTML files/E-catagory.html">Artificial Earrings</a>
+                                                </li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="fw-bold link"
+                                                        href="../All HTML files/A-catagory.html">Anklets</a></li>
+                                                <li><a class="linking" href="../All HTML files/A-catagory.html">Gold
+                                                        Anklets</a></li>
+                                                <li><a class="linking" href="../All HTML files/A-catagory.html">Diamond
+                                                        Anklets</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li class=""></li>
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/F-catagory.html">Fashion Jewellery</a>
+                                                </li>
+                                                <li><a class="linking" href="../All HTML files/F-catagory.html">Gold
+                                                        Jewellery</a></li>
+                                                <li><a class="linking" href="../All HTML files/F-catagory.html">Diamond
+                                                        Jewellery</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/BJ-catagory.html">Bridal Jewellery</a>
+                                                </li>
+                                                <li><a class="linking" href="../All HTML files/BJ-catagory.html">Gold
+                                                        Jewellery</a></li>
+                                                <li><a class="linking" href="../All HTML files/BJ-catagory.html">Diamond
+                                                        Jewellery</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="link" href="#">Brands</a><i class="bx bx-chevron-down bx-flip-"></i>
+                                    <div class="drop-menu w-100">
+                                        <ul class="drop-list">
+                                            <div class="box">
+                                                <li onclick="bye()"><a class="link fw-bold"
+                                                        href="../All HTML files/goldsmiths.html">GOLDSMITHS</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Neckles</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Earrings</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li onclick="bye()"><a class="link fw-bold"
+                                                        href="../All HTML files/Tiffany.html">Tiffany & co.</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Neckles</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Earrings</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/harrywinston.html">Harry Winston</a>
+                                                </li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Anklets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Bridal Jewellery</a>
+                                                </li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold" href="#">Cartier</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Necklaces</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Fashion Jewellery</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/compare.html">Compare</a>
+                                </li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/gallary.html">Gallery</a>
+                                </li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-items bg-light pb-5 pt-2 d-flex d-lg-none">
+                            <a href="../All HTML files/signIn.html"
+                                class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                style="width: 80px;">Sign In</a>
+                            <a href="../All HTML files/signUp.html"
+                                class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                style="width: 80px;">Sign Up</a>
+                            <i class='bx bx-cart-alt fs-2'></i>
+                            <span
+                                class="ms-2 fs-6 fw-bold text-white d-flex justify-content-center align-items-center">4</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container-fluid">
+        <div class="imagee d-none d-sm-block" style="background-image: url(../banner-Images/main-banner-1-1.jpg); object-fit: cover;height: 150px; background-position: 10%;"></div>
+    </div>
+    <!-- nav page link -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb" class="d-none d-md-block">
+                    <ol class="breadcrumb mt-3">
+                        <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Comparision</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center p-5 gap-5">
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Select" list="products1" id="prod1"
+                    onchange="getProducts1(this.value)" />
+                <datalist id="products1"> </datalist>
+                <table class="table">
+                    <tbody id="table1">
+                        <tr>
+                            <td>
+                                <img src="https://via.placeholder.com/310" alt="Jewellery image" class="prodImg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Brand</td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                        </tr>
+                        <tr>
+                            <td>PKR: --</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Select" list="products2" id="prod2"
+                    onchange="getProducts2(this.value)" />
+                <datalist id="products2"> </datalist>
+                <table class="table">
+                    <tbody id="table2">
+                        <tr>
+                            <td>
+                                <img src="https://via.placeholder.com/310" alt="Jewellery image" class="prodImg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Brand</td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                        </tr>
+                        <tr>
+                            <td>PKR: --</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid footer-color">
+        <div class="container-xxl py-2 px-0">
+                <div id="Container">
+                    <!-- fetching data from home.js file  -->
+                </div>
+            <hr>
+            <div class="container-xxl">
+                <div class="row px-4">
+                    <div class="col-6 py-2"><p>&copy; 2024 Our Jewellery. All rights reserved.</p></div>
+                    <div class="col-6 d-flex justify-content-end column-gap-2">
+                        <i class="bx bxl-whatsapp fs-2"></i>
+                        <i class="bx bxl-instagram fs-2"></i>
+                        <i class="bx bxl-facebook fs-2"></i>
+                        <i class="bx bxl-twitter fs-2"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="../All-script-files/header.js"></script>
+    <script src="../All-script-files/index.js"></script>
+    <script src="../All-script-files/compare.js"></script>
+    <script>
+        const productsList1 = document.getElementById("products1");
+        const productsList2 = document.getElementById("products2");
+        Jewellery_Items.forEach((prod) => {
+            const option1 = document.createElement("option");
+            option1.value = prod.title;
+            productsList1.appendChild(option1);
+
+            const option2 = document.createElement("option");
+            option2.value = prod.title;
+            productsList2.appendChild(option2);
+        });
+
+        function getProducts1(product) {
+            prod2 = document.getElementById("prod2").value;
+            if (product != prod2) {
+                const selectProduct = Jewellery_Items.find(
+                    (pd) => pd.title == product
+                );
+                if (selectProduct) {
+                    const table = document.getElementById("table1");
+                    table.innerHTML = "";
+                    const rows = [
+                        `<tr><td><img src="${selectProduct.image}" alt="product" class='prodImg'></td></tr>`,
+                        `<tr><td>${selectProduct.brand}</td></tr>`,
+                        `<tr><td>${selectProduct.catagory}</td></tr>`,
+                        `<tr><td>${selectProduct.price}</td></tr>`,
+                    ];
+                    rows.forEach((row) => {
+                        const tr = document.createElement("tr");
+                        tr.innerHTML = row;
+                        table.appendChild(tr);
+                    });
+                }
+            } else {
+                document.getElementById("prod1").value = "";
+                alert("Select a Different Product");
+            }
+        }
+
+        function getProducts2(product) {
+            prod1 = document.getElementById("prod1").value;
+            if (product != prod1) {
+                const selectProduct = Jewellery_Items.find(
+                    (pd) => pd.title == product
+                );
+                if (selectProduct) {
+                    const table = document.getElementById("table2");
+                    table.innerHTML = "";
+                    const rows = [
+                        `<tr><td><img src="${selectProduct.image}" alt="${selectProduct.productName}" class='prodImg'></td></tr>`,
+                        `<tr><td>${selectProduct.brand}</td></tr>`,
+                        `<tr><td>${selectProduct.catagory}</td></tr>`,
+                        `<tr><td>${selectProduct.price}</td></tr>`,
+                    ];
+                    rows.forEach((row) => {
+                        const tr = document.createElement("tr");
+                        tr.innerHTML = row;
+                        table.appendChild(tr);
+                    });
+                }
+            } else {
+                document.getElementById("prod2").value = "";
+                alert("Select a Different Product");
+            }
+        }
+    </script>
+</body>
+
+</html>

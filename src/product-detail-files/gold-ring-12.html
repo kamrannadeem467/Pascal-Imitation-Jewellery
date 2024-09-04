@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant 18K White Gold Diamond Ring - 1.00 Carat Brilliant Cut</title>
+    <link rel="stylesheet" href="../all-css-fils/home.css">
+    <link rel="stylesheet" href="../all-css-fils/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "poppins", sans-serif;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media screen and (max-width: 767px) {
+            .absolute {
+                position: absolute;
+                z-index: 1;
+                left: -100vw;
+                height: 100vh;
+                transition: .3s ease-in-out;
+                background-color: #fff;
+            }
+
+            .block {
+                position: absolute;
+                left: 0vw;
+                height: 100vh;
+                background-color: #fff;
+            }
+        }
+
+        @media screen and (max-width: 993px) {
+            .nav-bar {
+                position: fixed;
+                width: 50%;
+                height: 100vh;
+                background-color: white;
+                transform: translateX(-50vw);
+                transition: .3s ease-in-out;
+            }
+
+            .side {
+                transform: translateX(-0vw);
+                height: 100vh;
+                overflow: auto;
+                background-color: #fff;
+            }
+
+            .drop-menu {
+                width: 107%;
+                position: relative;
+                left: -30px;
+            }
+            .nav-bar li:hover .drop-menu {
+                height: auto;
+            }
+            
+            .drop-list {
+                width: 100%;
+            }
+            .drop-list li{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 580px) {
+                .nav-bar {
+                    width: 100%;
+                    transform: translateX(-100vw);
+                }
+
+                .side {
+                    transform: translateX(-0vw);
+                }
+        }
+    </style>
+    <style>
+            .text-center i {
+              color: rgb(255, 187, 0);
+            }
+            .hover:hover {
+              background-color: grey;
+              color: white;
+              cursor: pointer;
+            }
+          </style>
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container d-flex justify-content-center align-items-center"
+                    style="background-color: #f5f5f5;;">
+                    <div class="row">
+                        <div class="col">Sale Up To 25% OFF</div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="container-xxl">
+                        <div class="row py-1">
+                            <div class="col">
+                                <div class="logo">
+                                    <img style="height: 120%;"
+                                        src="../../WhatsApp_Image_2024-07-31_at_3.01.33_PM-removebg-preview.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6 d-none d-sm-flex justify-content-center">
+                                <div
+                                    class="search-bar d-sm-flex w-100 d-none justify-content-center align-items-center">
+                                    <input class="w-100 ps-2" type="search" id="search" placeholder="Search">
+                                    <i class='bx bx-search d-flex justify-content-center align-items-center'></i>
+                                </div>
+                            </div>
+                            <div class="col text-end d-flex justify-content-end">
+                                <div class="cart-items d-none d-lg-flex justify-content-center align-items-center">
+                                    <a href="../All HTML files/signIn.html"
+                                        class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                        style="width: 80px;">Sign In</a>
+                                    <a href="../All HTML files/signUp.html"
+                                        class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                        style="width: 80px;">Sign Up</a>
+                                    <i class='bx bx-cart-alt fs-2'></i><span
+                                        class="ms-2 fs-6 fw-bold text-white d-flex justify-content-center align-items-center">4</span>
+                                </div>
+                                <div class="menubar d-flex justify-content-center align-items-center d-lg-none pe-1 z-4"
+                                    style="cursor: pointer;" id="menu">
+                                    <i class="fa-solid fa-bars fs-1"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="nav-bar d-flex justify-content-center align-items-start align-items-lg-center z-3 "
+                    id="navbar">
+                    <p class="position-absolute d-block fs-4 d-lg-none mt-2" onclick="bye()"
+                        style="left: 90%; cursor: pointer;"><b>X</b></p>
+                    <div class="nav-items d-block justify-content-center align-items-center">
+                        <div class="nav-links mt-5 mt-lg-2 d-flex flex-column align-items-center position-relative">
+                            <ul class="flex-column flex-lg-row align-items-start row-gap-5 row-gap-lg-0 ps-0">
+                                <li onclick="bye()"><a class="link" href="../../index.html">Home</a></li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/about.html">About Us</a>
+                                </li>
+                                <li><a class="link" href="#">Catagories</a><i class="bx bx-chevron-down bx-flip-"></i>
+                                    <div class="drop-menu w-100">
+                                        <ul class="drop-list">
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/catagory.html">Rings</a></li>
+                                                <li><a class="linking" href="../All HTML files/catagory.html">Gold
+                                                        Rings</a></li>
+                                                <li><a class="linking" href="../All HTML files/catagory.html">Diamond
+                                                        Rings</a></li>
+                                                <li><a class="linking" href="../All HTML files/catagory.html">Artificial
+                                                        Rings</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/b-catagory.html">Bracelets</a></li>
+                                                <li><a class="linking" href="../All HTML files/b-catagory.html">Gold
+                                                        Bracelets</a></li>
+                                                <li><a class="linking" href="../All HTML files/b-catagory.html">Diamond
+                                                        Bracelets</a></li>
+                                                <li><a class="linking"
+                                                        href="../All HTML files/b-catagory.html">Artificial
+                                                        Bracelets</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/N-catagory.html">Neckles</a></li>
+                                                <li><a class="linking" href="../All HTML files/N-catagory.html">Gold
+                                                        Neckles</a></li>
+                                                <li><a class="linking" href="../All HTML files/N-catagory.html">Diamond
+                                                        Neckles</a></li>
+                                                <li><a class="linking"
+                                                        href="../All HTML files/N-catagory.html">Artificial Neckles</a>
+                                                </li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/E-catagory.html">Earrings</a></li>
+                                                <li><a class="linking" href="../All HTML files/E-catagory.html">Gold
+                                                        Earrings</a></li>
+                                                <li><a class="linking" href="../All HTML files/E-catagory.html">Diamond
+                                                        Earrings</a></li>
+                                                <li><a class="linking"
+                                                        href="../All HTML files/E-catagory.html">Artificial Earrings</a>
+                                                </li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="fw-bold link"
+                                                        href="../All HTML files/A-catagory.html">Anklets</a></li>
+                                                <li><a class="linking" href="../All HTML files/A-catagory.html">Gold
+                                                        Anklets</a></li>
+                                                <li><a class="linking" href="../All HTML files/A-catagory.html">Diamond
+                                                        Anklets</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li class=""></li>
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/F-catagory.html">Fashion Jewellery</a>
+                                                </li>
+                                                <li><a class="linking" href="../All HTML files/F-catagory.html">Gold
+                                                        Jewellery</a></li>
+                                                <li><a class="linking" href="../All HTML files/F-catagory.html">Diamond
+                                                        Jewellery</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/BJ-catagory.html">Bridal Jewellery</a>
+                                                </li>
+                                                <li><a class="linking" href="../All HTML files/BJ-catagory.html">Gold
+                                                        Jewellery</a></li>
+                                                <li><a class="linking" href="../All HTML files/BJ-catagory.html">Diamond
+                                                        Jewellery</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a class="link" href="#">Brands</a><i class="bx bx-chevron-down bx-flip-"></i>
+                                    <div class="drop-menu w-100">
+                                        <ul class="drop-list">
+                                            <div class="box">
+                                                <li onclick="bye()"><a class="link fw-bold"
+                                                        href="../All HTML files/goldsmiths.html">GOLDSMITHS</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Neckles</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/goldsmiths.html">Earrings</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li onclick="bye()"><a class="link fw-bold"
+                                                        href="../All HTML files/Tiffany.html">Tiffany & co.</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Neckles</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/Tiffany.html">Earrings</a></li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold"
+                                                        href="../All HTML files/harrywinston.html">Harry Winston</a>
+                                                </li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Anklets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/harrywinston.html">Bridal Jewellery</a>
+                                                </li>
+                                            </div>
+                                            <div class="box">
+                                                <li><a class="link fw-bold" href="#">Cartier</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Rings</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Bracelets</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Necklaces</a></li>
+                                                <li onclick="bye()"><a class="linking"
+                                                        href="../All HTML files/cartier.html">Fashion Jewellery</a></li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/compare.html">Compare</a></li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/gallary.html">Gallery</a>
+                                </li>
+                                <li onclick="bye()"><a class="link" href="../All HTML files/contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-items bg-light pb-5 pt-2 d-flex d-lg-none">
+                            <a href="../All HTML files/signIn.html"
+                                class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                style="width: 80px;">Sign In</a>
+                            <a href="../All HTML files/signUp.html"
+                                class="border rounded-4 py-1 d-flex justify-content-center align-items-center mx-2"
+                                style="width: 80px;">Sign Up</a>
+                            <i class='bx bx-cart-alt fs-2'></i>
+                            <span
+                                class="ms-2 fs-6 fw-bold text-white d-flex justify-content-center align-items-center">4</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="w-100" src="../Harry Winston/gold-rings/gold-rings (14).jpg" alt="Product Image">
+            </div>
+            <div class="col-md-6">
+                <h2 class="product-title">Harry Winston
+                    Antifer 18ct Rose Gold Heart Ring</h2>
+                <div class="row">
+                    <div class="col-6 fw-semibold">PKR 1L - PKR 2.25L</div>
+                    <div class="col-6 text-center">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                </div>
+                <p class="mt-2">Radiant Elegance: The Perfect Diamond BandRadiant Elegance: The Perfect Diamond Band
+                    <br><br>
+                    marquise and 45 round brilliant diamonds weighing a total of approximately 0.68 carats, set in 18K
+                    yellow gold.</p>
+                <div class="row">
+                    <div class="col-12 d-flex">
+                        <div class="hover fw-semibold px-3 py-1 mx-1 border">XS</div>
+                        <div class="hover fw-semibold px-3 py-1 mx-1 border">S</div>
+                        <div class="hover fw-semibold px-3 py-1 mx-1 border">M</div>
+                        <div class="hover fw-semibold px-3 py-1 mx-1 border">L</div>
+                        <div class="hover fw-semibold px-3 py-1 mx-1 border">XL</div>
+                    </div>
+                    <div class="product-quantity">
+                        <div class="product-quantity-title">Qty:</div>
+                        <input style="width: 50px; text-align: center;" type="text" maxlength="1" value="1">
+                        <button style="background-color: grey;" class="btn w-50 text-white"><b>ADD TO CART</b></button>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button style="background-color: grey;" class="btn w-100 mt-3 text-white"><b>BUY
+                                    NOW</b></button>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <p class="fw-semibold bg-light">Order By Phone: 03171048613</p>
+                            <p class="fw-semibold bg-light"><a class="text-dark" style="text-decoration: none;"
+                                    href="../All HTML files/contact.html">Find my Shop Location ></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4 class="mt-3">About This Item</h4>
+                <p>Just as the sun’s rays radiate outward, casting light in every direction, so too does the Tiffany Soleste® engagement ring. With a scintillating halo of brilliant bead-set diamonds and a striking pear-shaped center stone, light is gathered and mirrored throughout the design, resulting in an unrivaled display of brilliance. <br> A unique hybrid, the pear shape combines the round brilliant and marquise cuts to form a tapered teardrop. Made popular in the 18th century, the pear shape was said to represent tears of joy.
+                    <br> 
+                    At Tiffany, we ethically source our diamonds. Integrity and social responsibility are at the core of our sourcing practices.</p>
+            </div>
+        </div>
+    </div>
+    <!-- spacial Products -->
+<div class="popular-heading mt-5 mb-3">
+    <h3 class="text-center pt-5 fw-bold my-5 text-secondary" style=" cursor: default; font-size: 50px;">Special Products</h3>
+</div>
+<div class="container-fluid ">
+    <div class="container-xxl scroll-bar d-flex mb-5 overflow-auto">
+        <div class="boxes d-flex flex-column justify-content-evenly align-items-center  mb-5" style="background-color: white; min-width: 310px;">
+            <div class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                <img src="../gold-smith/diamond-rings/D-ring-12.png" alt="">
+                <div class="add-cart" >
+                    <a href="#" style="width: 90%;">
+                        <div class="card2 rounded-0 text-center text-white py-2">
+                            ADD TO CART
+                        </div>
+                    </a>                 
+                </div>
+            </div>
+            <p class="text-center"><a href="#">Exclusive Rings: Elevate Your <br> Style with Unique Designs</a></p>
+            <span>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </span>
+            <p>PKR 1L - PKR 2.5L</p>
+        </div>
+        <div class="boxes d-flex flex-column justify-content-evenly align-items-center mb-5" style="background-color: white; min-width: 310px;">
+            <div class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                <img src="../gold-smith/diamond-rings/D-ring-6.jpg" alt="">
+                <div class="add-cart" >
+                    <a href="#" style="width: 90%;">
+                        <div class="card2 rounded-0 text-center text-white py-2">
+                            ADD TO CART
+                        </div>
+                    </a>                    
+                </div>
+            </div>
+            <p class="text-center"><a href="#">Timeless Diamond Rings: Shine with <br> Unmatched Sparkle</a></p>
+            <span>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
+            </span>
+            <p>PKR 1L - PKR 2.5L</p>
+        </div>
+        <div class="boxes d-flex flex-column justify-content-evenly align-items-center mb-5" style="background-color: white; min-width: 310px;">
+            <div class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                <img src="../gold-smith/diamond-rings/D-ring-9.jpg" alt="">
+                <div class="add-cart" >
+                    <a href="#" style="width: 90%;">
+                        <div class="card2 rounded-0 text-center text-white py-2">
+                            ADD TO CART
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <p class="text-center"><a href="#">Luxury Diamond Rings: Celebrate <br> Life’s Special Moments"</a></p>
+            <span>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+            </span>
+            <p>PKR 1L - PKR 3L</p>
+        </div>
+        <div class="boxes d-flex flex-column justify-content-evenly align-items-center mb-5" style="background-color: white; min-width: 310px;">
+            <div class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                <img src="../gold-smith/diamond-rings/D-ring-7.jpg">
+                <div class="add-cart" >
+                    <a href="#" style="width: 90%;">
+                        <div class="card2 rounded-0 text-center text-white py-2">
+                            ADD TO CART
+                        </div>
+                    </a>                    
+                </div>
+            </div>
+            <p class="text-center"><a href="#">Exclusive Diamond Rings: Perfectly <br> Crafted for You"</a></p>
+            <span>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+                <i class='bx bx-star'></i>
+            </span>
+            <p>PKR 1.25L - PKR 2L</p>
+        </div>
+        <div class="boxes d-flex flex-column justify-content-evenly align-items-center mb-5" style="background-color: white; min-width: 310px;">
+            <div class="img position-relative py-2 overflow-hidden d-flex justify-content-center align-items-center flex-column">
+                <img src="../gold-smith/diamond-rings/D-ring-13.png">
+                <div class="add-cart" >
+                    <a href="#" style="width: 90%;">
+                        <div class="card2 rounded-0 text-center text-white py-2">
+                            ADD TO CART
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <p class="text-center"><a href="#">Dazzling Diamond Rings: Your Ultimate Symbol of Elegance"</a></p>
+            <span>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+            </span>
+            <p>PKR 1.25L - PKR 2L</p>
+        </div>
+       
+    </div>
+</div>
+        <!-- ✌✌👉footer Section👈✌✌ -->
+        <hr>
+        <div class="container-fluid footer-color">
+            <div class="container-xxl py-2 px-0">
+                <div id="Container">
+                    <!-- fetching data from home.js file  -->
+                </div>
+                <hr>
+                <div class="container-xxl">
+                    <div class="row px-4">
+                        <div class="col-6 py-2">
+                            <p>&copy; 2024 Our Jewellery. All rights reserved.</p>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end column-gap-2">
+                            <i class="bx bxl-whatsapp fs-2"></i>
+                            <i class="bx bxl-instagram fs-2"></i>
+                            <i class="bx bxl-facebook fs-2"></i>
+                            <i class="bx bxl-twitter fs-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <script src="../All-script-files/header.js"></script>
+        <script src="../All-script-files/index.js"></script>
+        <script src="../All-script-files/brand.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
